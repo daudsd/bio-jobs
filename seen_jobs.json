@@ -1,61 +1,533 @@
-{
-  "467850350": "2026-07-21",
-  "469735998": "2026-07-21",
-  "469063454": "2026-07-21",
-  "470266491": "2026-07-21",
-  "468121846": "2026-07-21",
-  "466662431": "2026-07-21",
-  "468801152": "2026-07-21",
-  "469765932": "2026-07-21",
-  "469357122": "2026-07-21",
-  "469329047": "2026-07-21",
-  "469351457": "2026-07-21",
-  "467878587": "2026-07-21",
-  "468697920": "2026-07-21",
-  "469054033": "2026-07-21",
-  "468148434": "2026-07-21",
-  "468415016": "2026-07-21",
-  "469240315": "2026-07-21",
-  "468039928": "2026-07-21",
-  "468492610": "2026-07-21",
-  "468581302": "2026-07-21",
-  "468422040": "2026-07-21",
-  "469162185": "2026-07-21",
-  "467974842": "2026-07-21",
-  "468135539": "2026-07-21",
-  "470005742": "2026-07-21",
-  "469167572": "2026-07-21",
-  "467073529": "2026-07-21",
-  "467102926": "2026-07-21",
-  "29ee9bdb-b262-4ce7-91f8-6da4763bcf11": "2026-07-21",
-  "55460be0-c687-457b-9adc-95c1514c90e2": "2026-07-21",
-  "a85ea3b7-cc54-418f-ab85-416153c50ebf": "2026-07-21",
-  "fb36399f-4b97-4641-b8db-54c1b3623943": "2026-07-21",
-  "510781f8-50a8-4d41-8f8e-15d0c5913c60": "2026-07-21",
-  "9b96e81f-b6d2-41cb-8b56-5137de449ef0": "2026-07-21",
-  "5df3237c-aa4a-4a1e-abc2-7884b23b9643": "2026-07-21",
-  "04e06c0f-6b81-4cf9-bd45-8cfe0c36851b": "2026-07-21",
-  "4db3e916-17f1-46ca-b442-7b55c419d1ba": "2026-07-21",
-  "df9bee84-9201-409a-93da-e5ad7fc98530": "2026-07-21",
-  "e6d1707c-8b40-42d4-8355-cd5c75a90271": "2026-07-21",
-  "50c8bd54-e1c8-4b57-8a82-87fda1bd28c5": "2026-07-21",
-  "0658f823-fddc-43e6-8563-68413cd3434b": "2026-07-21",
-  "8412bfea-47b0-430c-946d-cd173c2d3411": "2026-07-21",
-  "74c78d02-864d-438f-a1cf-14f8d3e9a9e3": "2026-07-21",
-  "c2014f0c-a016-4ac9-ab5c-b675ee892a14": "2026-07-21",
-  "8b5f9925-7421-473b-aeb9-bf8549579dd1": "2026-07-21",
-  "a14692d0-363d-4e89-b534-7daeae30ba12": "2026-07-21",
-  "e2e9ce32-cd31-4bc8-b3d2-79232af8627c": "2026-07-21",
-  "2cba9076-7628-46ed-8f03-2783b188add5": "2026-07-21",
-  "fa39eb59-e7c7-4e32-8af0-4c18cd387dbf": "2026-07-21",
-  "19a4c8c4-9867-4ebb-9590-bb3098b668be": "2026-07-21",
-  "7a4c5464-5502-4ac9-b8fd-28da7055113a": "2026-07-21",
-  "ca73a58b-d175-4c84-9625-976e9212d7e5": "2026-07-21",
-  "3f7e5311-2f81-46ff-91cb-27d6fe08d4c4": "2026-07-21",
-  "31abf579-9f52-4878-9050-54899d10fabd": "2026-07-21",
-  "74c139a0-445e-4b65-be70-8277bbe6f94c": "2026-07-21",
-  "1d80f835-8564-4504-b041-42f5d5d8b71d": "2026-07-21",
-  "6eea0b14-eb5c-4a88-9c25-c5aa0445fb72": "2026-07-21",
-  "a294dad8-cf8d-4985-85cd-0639a381c446": "2026-07-21",
-  "2ac76c48-caf1-4453-89ee-35e5378550e8": "2026-07-21"
-}
+[
+  {
+    "id": "467850350",
+    "title": "Produksjonstekniker ArcticZymes Technologies AS Produksjonstekniker – fylling, f",
+    "text": "Produksjonstekniker ArcticZymes Technologies AS Produksjonstekniker – fylling, fortynning og forsendelse av enzymprodukter Tromsø 27 dager siden Enkel søknad Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=467850350",
+    "source": "finn.no",
+    "category": "biotech",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469735998",
+    "title": "Laboratorieleder Rørosmeieriet AS Vil du lede laboratoriet hos Rørosmeieriet? Rø",
+    "text": "Laboratorieleder Rørosmeieriet AS Vil du lede laboratoriet hos Rørosmeieriet? Røros 7 dager siden Enkel søknad Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469735998",
+    "source": "finn.no",
+    "category": "food",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469063454",
+    "title": "Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata Folkehelseinstit",
+    "text": "Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata Folkehelseinstituttet FHI Oslo 15 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469063454",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "470266491",
+    "title": "Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og van",
+    "text": "Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og vannbårne virus Folkehelseinstituttet FHI Oslo Ny i dag Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=470266491",
+    "source": "finn.no",
+    "category": "food",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468121846",
+    "title": "Senior Consultant – Parametric Release Risk Assessment Akkodis Norway AS Er du e",
+    "text": "Senior Consultant – Parametric Release Risk Assessment Akkodis Norway AS Er du en erfaren GMP-spesialist med solid kompetanse innen farmasøytisk produksjon? Oslo 25 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468121846",
+    "source": "finn.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "466662431",
+    "title": "Instituttleder for jordbruksfag Universitetet i Innlandet Vil du lede et av Norg",
+    "text": "Instituttleder for jordbruksfag Universitetet i Innlandet Vil du lede et av Norges fremste miljøer for anvendt landbruksutdanning og -forskning? Ridabu en måned siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=466662431",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468801152",
+    "title": "Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produ",
+    "text": "Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produksjon Agilera Pharma AS Kjeller 17 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468801152",
+    "source": "finn.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469765932",
+    "title": "QC Analytiker GE HEALTHCARE AS Blir du med på laget som QC Analytiker? Oslo 6 da",
+    "text": "QC Analytiker GE HEALTHCARE AS Blir du med på laget som QC Analytiker? Oslo 6 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469765932",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469357122",
+    "title": "QC Analysts Jobzone Oslo QC Analyst søkes til spennende vikariat innen farmasøyt",
+    "text": "QC Analysts Jobzone Oslo QC Analyst søkes til spennende vikariat innen farmasøytisk kvalitetskontroll Oslo 11 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469357122",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469329047",
+    "title": "QC Analyst - Microbiology GE HEALTHCARE AS Blir du med på laget- QC Analyst - Mi",
+    "text": "QC Analyst - Microbiology GE HEALTHCARE AS Blir du med på laget- QC Analyst - Microbiology? Oslo 12 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469329047",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469351457",
+    "title": "QC Analyst For kunde Vil du jobbe med kvalitetskontroll av produkter som brukes",
+    "text": "QC Analyst For kunde Vil du jobbe med kvalitetskontroll av produkter som brukes verden over? Oslo 11 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469351457",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "467878587",
+    "title": "Tekniker Agilera Pharma AS Kjeller 27 dager siden Legg til som favoritt.",
+    "text": "Tekniker Agilera Pharma AS Kjeller 27 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=467878587",
+    "source": "finn.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468697920",
+    "title": "Seniorforsker innen miljøkjemi og arktisk miljø NILU Vil du bli med NILU på å fo",
+    "text": "Seniorforsker innen miljøkjemi og arktisk miljø NILU Vil du bli med NILU på å forme framtidens arktiske miljøforskning? Tromsø 18 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468697920",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469054033",
+    "title": "Research Scientist in Analytical Chemistry and Mass Spectrometry SINTEF Industri",
+    "text": "Research Scientist in Analytical Chemistry and Mass Spectrometry SINTEF Industri Trondheim 15 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469054033",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468148434",
+    "title": "Laboratoriemedarbeider SALSUS AS Salsus søker laboratoriemedarbeider til sin fab",
+    "text": "Laboratoriemedarbeider SALSUS AS Salsus søker laboratoriemedarbeider til sin fabrikk på Kongsvinger Kongsvinger 24 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468148434",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468415016",
+    "title": "Kvalitetssjef Nortura SA Vil du lede og videreutvikle kvalitet, mattrygghet og d",
+    "text": "Kvalitetssjef Nortura SA Vil du lede og videreutvikle kvalitet, mattrygghet og dyrevelferd i Nortura? Tønsberg 21 dager siden Enkel søknad Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468415016",
+    "source": "finn.no",
+    "category": "food",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469240315",
+    "title": "Laboratorieingeniør - vikariat NIVA Laboratorieingeniør - vikariat Oslo 13 dager",
+    "text": "Laboratorieingeniør - vikariat NIVA Laboratorieingeniør - vikariat Oslo 13 dager siden Betalt plassering Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469240315",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468039928",
+    "title": "Bioingeniør/Ingeniør Oslo universitetssykehus HF Vi søker bioingeniør/ingeniør –",
+    "text": "Bioingeniør/Ingeniør Oslo universitetssykehus HF Vi søker bioingeniør/ingeniør – to ledige vikariater Oslo 26 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468039928",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468492610",
+    "title": "Consultant - Sterility Assurance StudentConsulting Vil du lede et spennende GMP-",
+    "text": "Consultant - Sterility Assurance StudentConsulting Vil du lede et spennende GMP-prosjekt i farmasøytisk industri? Oslo 21 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468492610",
+    "source": "finn.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468581302",
+    "title": "Kundeserviceleder OneMed Vil du lede reisen mot Norges beste kundeservice for ku",
+    "text": "Kundeserviceleder OneMed Vil du lede reisen mot Norges beste kundeservice for kunder i helsesektoren? Skedsmokorset 20 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468581302",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468422040",
+    "title": "Senior Project Manager — Product, Packaging &amp; Quality DELLIA AS Oslo 21 dage",
+    "text": "Senior Project Manager — Product, Packaging &amp; Quality DELLIA AS Oslo 21 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468422040",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469162185",
+    "title": "Research Scientist/Senior Research Scientist SINTEF Industri Research Scientist/",
+    "text": "Research Scientist/Senior Research Scientist SINTEF Industri Research Scientist/Senior Research Scientist in Experimental Electrochemical Conversion Oslo 13 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469162185",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "467974842",
+    "title": "Overingeniør materialkarakterisering NTNU - Norges teknisk-naturvitenskapelige u",
+    "text": "Overingeniør materialkarakterisering NTNU - Norges teknisk-naturvitenskapelige universitet Ved Institutt for materialteknologi er det ledig stilling som Trondheim 26 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=467974842",
+    "source": "finn.no",
+    "category": "food",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "468135539",
+    "title": "Senior Consultant – Parametric Release Risk Assessment (Sterility Assurance) For",
+    "text": "Senior Consultant – Parametric Release Risk Assessment (Sterility Assurance) For kunde Vil du være med og ta eierskap til en kritisk GMP-risikovurdering innen sterilitetssikring? Oslo 25 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=468135539",
+    "source": "finn.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "470005742",
+    "title": "QC Compliance Officer GE HEALTHCARE AS QC Compliance Officer søkes til GE Health",
+    "text": "QC Compliance Officer GE HEALTHCARE AS QC Compliance Officer søkes til GE Healthcare Oslo 3 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=470005742",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "469167572",
+    "title": "Produksjonsteknikere Agilera Pharma AS Kjeller 13 dager siden Legg til som favor",
+    "text": "Produksjonsteknikere Agilera Pharma AS Kjeller 13 dager siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=469167572",
+    "source": "finn.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "467073529",
+    "title": "Spesialisert hjem RAUS OMSORG AS Er du på utkikk etter en spennende stilling? Se",
+    "text": "Spesialisert hjem RAUS OMSORG AS Er du på utkikk etter en spennende stilling? Setskog en måned siden Enkel søknad Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=467073529",
+    "source": "finn.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "467102926",
+    "title": "Open applications for Chief Engineer The QRILL Company AS Ålesund en måned siden",
+    "text": "Open applications for Chief Engineer The QRILL Company AS Ålesund en måned siden Legg til som favoritt.",
+    "url": "https://www.finn.no/job/fulltime/ad.html?finnkode=467102926",
+    "source": "finn.no",
+    "category": "biotech",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "29ee9bdb-b262-4ce7-91f8-6da4763bcf11",
+    "title": "Produksjonstekniker -- fylling, fortynning og forsendelse av enzymprodukter",
+    "text": "Produksjonstekniker -- fylling, fortynning og forsendelse av enzymprodukter",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/29ee9bdb-b262-4ce7-91f8-6da4763bcf11",
+    "source": "nav.no",
+    "category": "biotech",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "55460be0-c687-457b-9adc-95c1514c90e2",
+    "title": "Postdoctoral Fellow in Environmental and Industrial Biotechnology",
+    "text": "Postdoctoral Fellow in Environmental and Industrial Biotechnology",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/55460be0-c687-457b-9adc-95c1514c90e2",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "a85ea3b7-cc54-418f-ab85-416153c50ebf",
+    "title": "Ingeniør - Mikrobiologisk kvalitetskontroll | Radiofarmasøytisk produksjon",
+    "text": "Ingeniør - Mikrobiologisk kvalitetskontroll | Radiofarmasøytisk produksjon",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/a85ea3b7-cc54-418f-ab85-416153c50ebf",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "fb36399f-4b97-4641-b8db-54c1b3623943",
+    "title": "Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og van",
+    "text": "Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og vannbårne virus",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/fb36399f-4b97-4641-b8db-54c1b3623943",
+    "source": "nav.no",
+    "category": "food",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "510781f8-50a8-4d41-8f8e-15d0c5913c60",
+    "title": "Vil du lede et av Norgest mest spesialiserte laboratoriemiljøer?",
+    "text": "Vil du lede et av Norgest mest spesialiserte laboratoriemiljøer?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/510781f8-50a8-4d41-8f8e-15d0c5913c60",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "9b96e81f-b6d2-41cb-8b56-5137de449ef0",
+    "title": "Are you ready to drive innovative water treatment solutions?",
+    "text": "Are you ready to drive innovative water treatment solutions?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/9b96e81f-b6d2-41cb-8b56-5137de449ef0",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "5df3237c-aa4a-4a1e-abc2-7884b23b9643",
+    "title": "Researcher in Cell Therapy Process Development",
+    "text": "Researcher in Cell Therapy Process Development",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/5df3237c-aa4a-4a1e-abc2-7884b23b9643",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "04e06c0f-6b81-4cf9-bd45-8cfe0c36851b",
+    "title": "Research position: urine-derived liquid biopsy in pediatric cancer",
+    "text": "Research position: urine-derived liquid biopsy in pediatric cancer",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/04e06c0f-6b81-4cf9-bd45-8cfe0c36851b",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "4db3e916-17f1-46ca-b442-7b55c419d1ba",
+    "title": "Researcher in CRISPR gene therapy group",
+    "text": "Researcher in CRISPR gene therapy group",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/4db3e916-17f1-46ca-b442-7b55c419d1ba",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "df9bee84-9201-409a-93da-e5ad7fc98530",
+    "title": "Researcher in synthetic biology and biosynthetic gene cluster expression",
+    "text": "Researcher in synthetic biology and biosynthetic gene cluster expression",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/df9bee84-9201-409a-93da-e5ad7fc98530",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "e6d1707c-8b40-42d4-8355-cd5c75a90271",
+    "title": "Produksjonsteknikere",
+    "text": "Produksjonsteknikere",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/e6d1707c-8b40-42d4-8355-cd5c75a90271",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "50c8bd54-e1c8-4b57-8a82-87fda1bd28c5",
+    "title": "Postdoctoral Research Fellow in Algal Microbiome Engineering",
+    "text": "Postdoctoral Research Fellow in Algal Microbiome Engineering",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/50c8bd54-e1c8-4b57-8a82-87fda1bd28c5",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "0658f823-fddc-43e6-8563-68413cd3434b",
+    "title": "Vil du lede laboratoriet hos Rørosmeieriet?",
+    "text": "Vil du lede laboratoriet hos Rørosmeieriet?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/0658f823-fddc-43e6-8563-68413cd3434b",
+    "source": "nav.no",
+    "category": "food",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "74c78d02-864d-438f-a1cf-14f8d3e9a9e3",
+    "title": "Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata",
+    "text": "Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/74c78d02-864d-438f-a1cf-14f8d3e9a9e3",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "8412bfea-47b0-430c-946d-cd173c2d3411",
+    "title": "Overingeniør fangstteknologi",
+    "text": "Overingeniør fangstteknologi",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/8412bfea-47b0-430c-946d-cd173c2d3411",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "c2014f0c-a016-4ac9-ab5c-b675ee892a14",
+    "title": "Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produ",
+    "text": "Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produksjon",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/c2014f0c-a016-4ac9-ab5c-b675ee892a14",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "8b5f9925-7421-473b-aeb9-bf8549579dd1",
+    "title": "Blir du med på laget som QC Analytiker?",
+    "text": "Blir du med på laget som QC Analytiker?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/8b5f9925-7421-473b-aeb9-bf8549579dd1",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "a14692d0-363d-4e89-b534-7daeae30ba12",
+    "title": "Vil du jobbe med kvalitetskontroll av produkter som brukes verden over?",
+    "text": "Vil du jobbe med kvalitetskontroll av produkter som brukes verden over?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/a14692d0-363d-4e89-b534-7daeae30ba12",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "e2e9ce32-cd31-4bc8-b3d2-79232af8627c",
+    "title": "Blir du med på laget- QC Analyst - Microbiology?",
+    "text": "Blir du med på laget- QC Analyst - Microbiology?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/e2e9ce32-cd31-4bc8-b3d2-79232af8627c",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "2cba9076-7628-46ed-8f03-2783b188add5",
+    "title": "Tekniker",
+    "text": "Tekniker",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/2cba9076-7628-46ed-8f03-2783b188add5",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "fa39eb59-e7c7-4e32-8af0-4c18cd387dbf",
+    "title": "Laboratorieingeniør - vikariat",
+    "text": "Laboratorieingeniør - vikariat",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/fa39eb59-e7c7-4e32-8af0-4c18cd387dbf",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "19a4c8c4-9867-4ebb-9590-bb3098b668be",
+    "title": "Vil du lede prosjekter som gir kunnskap for et bedre samfunn?",
+    "text": "Vil du lede prosjekter som gir kunnskap for et bedre samfunn?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/19a4c8c4-9867-4ebb-9590-bb3098b668be",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "7a4c5464-5502-4ac9-b8fd-28da7055113a",
+    "title": "Analytiker",
+    "text": "Analytiker",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/7a4c5464-5502-4ac9-b8fd-28da7055113a",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "ca73a58b-d175-4c84-9625-976e9212d7e5",
+    "title": "Overingeniør – pesticidanalyser",
+    "text": "Overingeniør – pesticidanalyser",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/ca73a58b-d175-4c84-9625-976e9212d7e5",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "3f7e5311-2f81-46ff-91cb-27d6fe08d4c4",
+    "title": "Research Scientist in Analytical Chemistry and Mass Spectrometry",
+    "text": "Research Scientist in Analytical Chemistry and Mass Spectrometry",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/3f7e5311-2f81-46ff-91cb-27d6fe08d4c4",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "31abf579-9f52-4878-9050-54899d10fabd",
+    "title": "Vil du være med å fremskape kunnskap om fiskeskadelige algetoksiner i norske far",
+    "text": "Vil du være med å fremskape kunnskap om fiskeskadelige algetoksiner i norske farvann?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/31abf579-9f52-4878-9050-54899d10fabd",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "74c139a0-445e-4b65-be70-8277bbe6f94c",
+    "title": "Har du interesse og erfaring innen kjemikalieforvaltning og kjemikaliesikkerhet?",
+    "text": "Har du interesse og erfaring innen kjemikalieforvaltning og kjemikaliesikkerhet?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/74c139a0-445e-4b65-be70-8277bbe6f94c",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "1d80f835-8564-4504-b041-42f5d5d8b71d",
+    "title": "Seniorforsker innen miljøkjemi og arktisk miljø",
+    "text": "Seniorforsker innen miljøkjemi og arktisk miljø",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/1d80f835-8564-4504-b041-42f5d5d8b71d",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "6eea0b14-eb5c-4a88-9c25-c5aa0445fb72",
+    "title": "Er du en erfaren GMP-spesialist med solid kompetanse innen farmasøytisk produksj",
+    "text": "Er du en erfaren GMP-spesialist med solid kompetanse innen farmasøytisk produksjon?",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/6eea0b14-eb5c-4a88-9c25-c5aa0445fb72",
+    "source": "nav.no",
+    "category": "pharma",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "a294dad8-cf8d-4985-85cd-0639a381c446",
+    "title": "Vil du bidra til viktig laboratoriearbeid? Vi søker to avdelingsingeniører i 2-å",
+    "text": "Vil du bidra til viktig laboratoriearbeid? Vi søker to avdelingsingeniører i 2-årige midlertidige ansettelser",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/a294dad8-cf8d-4985-85cd-0639a381c446",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "2ac76c48-caf1-4453-89ee-35e5378550e8",
+    "title": "Prosjektmedarbeider innen torskeoppdrett",
+    "text": "Prosjektmedarbeider innen torskeoppdrett",
+    "url": "https://arbeidsplassen.nav.no/stillinger/stilling/2ac76c48-caf1-4453-89ee-35e5378550e8",
+    "source": "nav.no",
+    "category": "research",
+    "added": "2026-07-21"
+  }
+]

@@ -18,456 +18,396 @@
     .filters button { padding: 6px 14px; border: 1px solid #0d3b6e; border-radius: 20px;
                       background: white; color: #0d3b6e; cursor: pointer; font-size: 0.85rem; }
     .filters button.active, .filters button:hover { background: #0d3b6e; color: white; }
+    .sep { width: 1px; background: #ddd; margin: 0 4px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 1.2rem; padding: 1.5rem 2rem; max-width: 1200px; margin: 0 auto; }
     .card { background: white; border-radius: 10px; padding: 1.2rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #0d3b6e;
             display: flex; flex-direction: column; gap: 0.5rem; }
     .card.best { border-left-color: #27ae60; }
-    .card.warn { border-left-color: #e67e22; }
     .card h3 { font-size: 1rem; color: #0d3b6e; }
     .card .meta { font-size: 0.82rem; color: #555; }
-    .card .summary { font-size: 0.88rem; line-height: 1.5; }
-    .card .relevant { font-size: 0.82rem; color: #27ae60; font-style: italic; }
-    .card a { margin-top: auto; display: inline-block; padding: 6px 14px;
-              background: #0d3b6e; color: white; border-radius: 6px;
-              text-decoration: none; font-size: 0.85rem; width: fit-content; }
+    .card .summary { font-size: 0.88rem; line-height: 1.5; flex: 1; }
+    .card a { display: inline-block; padding: 6px 14px; background: #0d3b6e;
+              color: white; border-radius: 6px; text-decoration: none;
+              font-size: 0.85rem; width: fit-content; margin-top: auto; }
     .card a:hover { background: #1a5fa8; }
   </style>
 </head>
 <body>
 <header>
   <h1>🧪 Biotech & Lab Jobs in Norway</h1>
-  <p>Zarqa Chaudhary — MSc Applied Biotechnology, University of Iceland &nbsp;|&nbsp; Last updated: 2026-07-21</p>
+  <p>Zarqa Chaudhary — MSc Applied Biotechnology, University of Iceland &nbsp;|&nbsp; Updated: 2026-07-21</p>
 </header>
 <div class="filters">
-  <button class="active" onclick="filter('all', this)">All (59)</button>
-  <button onclick="filter('pharma', this)">Pharma / QC</button>
-  <button onclick="filter('food', this)">Food Industry</button>
-  <button onclick="filter('biotech', this)">Biotech</button>
-  <button onclick="filter('research', this)">Research</button>
-  <span style="width:1px;background:#ddd;margin:0 4px;"></span>
-  <button onclick="filterDate(0, this)">Today</button>
-  <button onclick="filterDate(7, this)">This Week</button>
-  <button onclick="filterDate(30, this)">This Month</button>
+  <button class="active" onclick="filter('all',this)">All (59)</button>
+  <button onclick="filter('pharma',this)">Pharma / QC</button>
+  <button onclick="filter('food',this)">Food Industry</button>
+  <button onclick="filter('biotech',this)">Biotech</button>
+  <button onclick="filter('research',this)">Research</button>
+  <span class="sep"></span>
+  <button onclick="filterDate(0,this)">Today</button>
+  <button onclick="filterDate(7,this)">This Week</button>
+  <button onclick="filterDate(30,this)">This Month</button>
 </div>
 <div class="grid" id="grid">
   <div class="card best" data-cat="biotech" data-date="2026-07-21">
-    <h3>1. Produksjonstekniker ArcticZymes Technologies AS Produksjonst <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>1. Produksjonstekniker ArcticZymes Technologies AS Produksjonstekniker – fylling, f <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Produksjonstekniker ArcticZymes Technologies AS Produksjonstekniker – fylling, fortynning og forsendelse av enzymprodukter Tromsø 27 dager siden Enkel søknad Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=467850350" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="food" data-date="2026-07-21">
-    <h3>2. Laboratorieleder Rørosmeieriet AS Vil du lede laboratoriet h <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>2. Laboratorieleder Rørosmeieriet AS Vil du lede laboratoriet hos Rørosmeieriet? Rø <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Laboratorieleder Rørosmeieriet AS Vil du lede laboratoriet hos Rørosmeieriet? Røros 7 dager siden Enkel søknad Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469735998" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>3. Rådgiver/seniorrådgiver innen smittevernovervåking og helsed <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>3. Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata Folkehelseinstit <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata Folkehelseinstituttet FHI Oslo 15 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469063454" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card best" data-cat="food" data-date="2026-07-21">
-    <h3>4. Laboratoriekoordinator for Europeisk referanselaboratorium ( <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>4. Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og van <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og vannbårne virus Folkehelseinstituttet FHI Oslo Ny i dag Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=470266491" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>5. Senior Consultant – Parametric Release Risk Assessment Akkod <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>5. Senior Consultant – Parametric Release Risk Assessment Akkodis Norway AS Er du e <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Senior Consultant – Parametric Release Risk Assessment Akkodis Norway AS Er du en erfaren GMP-spesialist med solid kompetanse innen farmasøytisk produksjon? Oslo 25 dager siden Leg</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468121846" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>6. Instituttleder for jordbruksfag Universitetet i Innlandet Vi <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
-    <div class="summary">Instituttleder for jordbruksfag Universitetet i Innlandet Vil du lede et av Norges fremste miljøer for anvendt landbruksutdanning og -forskning? Ridabu en måned siden Legg til som</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
+    <h3>6. Instituttleder for jordbruksfag Universitetet i Innlandet Vil du lede et av Norg <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
+    <div class="summary">Instituttleder for jordbruksfag Universitetet i Innlandet Vil du lede et av Norges fremste miljøer for anvendt landbruksutdanning og -forskning? Ridabu en måned siden Legg til som </div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=466662431" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>7. Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Rad <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>7. Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produ <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produksjon Agilera Pharma AS Kjeller 17 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468801152" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>8. QC Analytiker GE HEALTHCARE AS Blir du med på laget som QC A <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>8. QC Analytiker GE HEALTHCARE AS Blir du med på laget som QC Analytiker? Oslo 6 da <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">QC Analytiker GE HEALTHCARE AS Blir du med på laget som QC Analytiker? Oslo 6 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469765932" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>9. QC Analysts Jobzone Oslo QC Analyst søkes til spennende vika <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>9. QC Analysts Jobzone Oslo QC Analyst søkes til spennende vikariat innen farmasøyt <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">QC Analysts Jobzone Oslo QC Analyst søkes til spennende vikariat innen farmasøytisk kvalitetskontroll Oslo 11 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469357122" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>10. QC Analyst - Microbiology GE HEALTHCARE AS Blir du med på la <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>10. QC Analyst - Microbiology GE HEALTHCARE AS Blir du med på laget- QC Analyst - Mi <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">QC Analyst - Microbiology GE HEALTHCARE AS Blir du med på laget- QC Analyst - Microbiology? Oslo 12 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469329047" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>11. QC Analyst For kunde Vil du jobbe med kvalitetskontroll av p <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>11. QC Analyst For kunde Vil du jobbe med kvalitetskontroll av produkter som brukes <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">QC Analyst For kunde Vil du jobbe med kvalitetskontroll av produkter som brukes verden over? Oslo 11 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469351457" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>12. Tekniker Agilera Pharma AS Kjeller 27 dager siden Legg til s <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>12. Tekniker Agilera Pharma AS Kjeller 27 dager siden Legg til som favoritt. <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Tekniker Agilera Pharma AS Kjeller 27 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=467878587" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>13. Seniorforsker innen miljøkjemi og arktisk miljø NILU Vil du <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>13. Seniorforsker innen miljøkjemi og arktisk miljø NILU Vil du bli med NILU på å fo <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Seniorforsker innen miljøkjemi og arktisk miljø NILU Vil du bli med NILU på å forme framtidens arktiske miljøforskning? Tromsø 18 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468697920" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>14. Research Scientist in Analytical Chemistry and Mass Spectrom <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>14. Research Scientist in Analytical Chemistry and Mass Spectrometry SINTEF Industri <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Research Scientist in Analytical Chemistry and Mass Spectrometry SINTEF Industri Trondheim 15 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469054033" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
-  <div class="card" data-cat="food" data-date="2026-07-21">
-    <h3>15. Laboratoriemedarbeider SALSUS AS Salsus søker laboratoriemed <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+  <div class="card" data-cat="research" data-date="2026-07-21">
+    <h3>15. Laboratoriemedarbeider SALSUS AS Salsus søker laboratoriemedarbeider til sin fab <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Laboratoriemedarbeider SALSUS AS Salsus søker laboratoriemedarbeider til sin fabrikk på Kongsvinger Kongsvinger 24 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468148434" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card best" data-cat="food" data-date="2026-07-21">
-    <h3>16. Kvalitetssjef Nortura SA Vil du lede og videreutvikle kvalit <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>16. Kvalitetssjef Nortura SA Vil du lede og videreutvikle kvalitet, mattrygghet og d <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Kvalitetssjef Nortura SA Vil du lede og videreutvikle kvalitet, mattrygghet og dyrevelferd i Nortura? Tønsberg 21 dager siden Enkel søknad Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468415016" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>17. Laboratorieingeniør - vikariat NIVA Laboratorieingeniør - vi <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>17. Laboratorieingeniør - vikariat NIVA Laboratorieingeniør - vikariat Oslo 13 dager <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Laboratorieingeniør - vikariat NIVA Laboratorieingeniør - vikariat Oslo 13 dager siden Betalt plassering Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469240315" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>18. Bioingeniør/Ingeniør Oslo universitetssykehus HF Vi søker bi <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>18. Bioingeniør/Ingeniør Oslo universitetssykehus HF Vi søker bioingeniør/ingeniør – <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Bioingeniør/Ingeniør Oslo universitetssykehus HF Vi søker bioingeniør/ingeniør – to ledige vikariater Oslo 26 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468039928" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>19. Consultant - Sterility Assurance StudentConsulting Vil du le <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>19. Consultant - Sterility Assurance StudentConsulting Vil du lede et spennende GMP- <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Consultant - Sterility Assurance StudentConsulting Vil du lede et spennende GMP-prosjekt i farmasøytisk industri? Oslo 21 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468492610" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>20. Kundeserviceleder OneMed Vil du lede reisen mot Norges beste <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>20. Kundeserviceleder OneMed Vil du lede reisen mot Norges beste kundeservice for ku <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Kundeserviceleder OneMed Vil du lede reisen mot Norges beste kundeservice for kunder i helsesektoren? Skedsmokorset 20 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468581302" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>21. Senior Project Manager — Product, Packaging &amp; Quality DE <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>21. Senior Project Manager — Product, Packaging &amp; Quality DELLIA AS Oslo 21 dage <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Senior Project Manager — Product, Packaging &amp; Quality DELLIA AS Oslo 21 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468422040" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>22. Research Scientist/Senior Research Scientist SINTEF Industri <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>22. Research Scientist/Senior Research Scientist SINTEF Industri Research Scientist/ <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Research Scientist/Senior Research Scientist SINTEF Industri Research Scientist/Senior Research Scientist in Experimental Electrochemical Conversion Oslo 13 dager siden Legg til so</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469162185" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card best" data-cat="food" data-date="2026-07-21">
-    <h3>23. Overingeniør materialkarakterisering NTNU - Norges teknisk-n <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>23. Overingeniør materialkarakterisering NTNU - Norges teknisk-naturvitenskapelige u <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Overingeniør materialkarakterisering NTNU - Norges teknisk-naturvitenskapelige universitet Ved Institutt for materialteknologi er det ledig stilling som Trondheim 26 dager siden Le</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=467974842" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>24. Senior Consultant – Parametric Release Risk Assessment (Ster <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>24. Senior Consultant – Parametric Release Risk Assessment (Sterility Assurance) For <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Senior Consultant – Parametric Release Risk Assessment (Sterility Assurance) For kunde Vil du være med og ta eierskap til en kritisk GMP-risikovurdering innen sterilitetssikring? O</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=468135539" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>25. QC Compliance Officer GE HEALTHCARE AS QC Compliance Officer <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>25. QC Compliance Officer GE HEALTHCARE AS QC Compliance Officer søkes til GE Health <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">QC Compliance Officer GE HEALTHCARE AS QC Compliance Officer søkes til GE Healthcare Oslo 3 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=470005742" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>26. Produksjonsteknikere Agilera Pharma AS Kjeller 13 dager side <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>26. Produksjonsteknikere Agilera Pharma AS Kjeller 13 dager siden Legg til som favor <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Produksjonsteknikere Agilera Pharma AS Kjeller 13 dager siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=469167572" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>27. Spesialisert hjem RAUS OMSORG AS Er du på utkikk etter en sp <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>27. Spesialisert hjem RAUS OMSORG AS Er du på utkikk etter en spennende stilling? Se <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Spesialisert hjem RAUS OMSORG AS Er du på utkikk etter en spennende stilling? Setskog en måned siden Enkel søknad Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=467073529" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="biotech" data-date="2026-07-21">
-    <h3>28. Open applications for Chief Engineer The QRILL Company AS Ål <span class="badge">finn.no</span></h3>
-    <div class="meta">📍 Source: finn.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>28. Open applications for Chief Engineer The QRILL Company AS Ålesund en måned siden <span class="badge">finn.no</span></h3>
+    <div class="meta">📍 finn.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Open applications for Chief Engineer The QRILL Company AS Ålesund en måned siden Legg til som favoritt.</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://www.finn.no/job/fulltime/ad.html?finnkode=467102926" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card best" data-cat="biotech" data-date="2026-07-21">
-    <h3>29. Produksjonstekniker -- fylling, fortynning og forsendelse av <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>29. Produksjonstekniker -- fylling, fortynning og forsendelse av enzymprodukter <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Produksjonstekniker -- fylling, fortynning og forsendelse av enzymprodukter</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/29ee9bdb-b262-4ce7-91f8-6da4763bcf11" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>30. Postdoctoral Fellow in Environmental and Industrial Biotechn <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>30. Postdoctoral Fellow in Environmental and Industrial Biotechnology <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Postdoctoral Fellow in Environmental and Industrial Biotechnology</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/55460be0-c687-457b-9adc-95c1514c90e2" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>31. Ingeniør - Mikrobiologisk kvalitetskontroll | Radiofarmasøyt <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>31. Ingeniør - Mikrobiologisk kvalitetskontroll | Radiofarmasøytisk produksjon <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Ingeniør - Mikrobiologisk kvalitetskontroll | Radiofarmasøytisk produksjon</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/a85ea3b7-cc54-418f-ab85-416153c50ebf" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card best" data-cat="food" data-date="2026-07-21">
-    <h3>32. Laboratoriekoordinator for Europeisk referanselaboratorium ( <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>32. Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og van <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Laboratoriekoordinator for Europeisk referanselaboratorium (EURL) for mat og vannbårne virus</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/fb36399f-4b97-4641-b8db-54c1b3623943" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>33. Vil du lede et av Norgest mest spesialiserte laboratoriemilj <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>33. Vil du lede et av Norgest mest spesialiserte laboratoriemiljøer? <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Vil du lede et av Norgest mest spesialiserte laboratoriemiljøer?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/510781f8-50a8-4d41-8f8e-15d0c5913c60" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>34. Are you ready to drive innovative water treatment solutions? <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Are you ready to drive innovative water treatment solutions?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/9b96e81f-b6d2-41cb-8b56-5137de449ef0" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>35. Researcher in Cell Therapy Process Development <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Researcher in Cell Therapy Process Development</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/5df3237c-aa4a-4a1e-abc2-7884b23b9643" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>36. Research position: urine-derived liquid biopsy in pediatric <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>36. Research position: urine-derived liquid biopsy in pediatric cancer <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Research position: urine-derived liquid biopsy in pediatric cancer</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/04e06c0f-6b81-4cf9-bd45-8cfe0c36851b" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>37. Researcher in CRISPR gene therapy group <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Researcher in CRISPR gene therapy group</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/4db3e916-17f1-46ca-b442-7b55c419d1ba" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>38. Researcher in synthetic biology and biosynthetic gene cluste <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>38. Researcher in synthetic biology and biosynthetic gene cluster expression <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Researcher in synthetic biology and biosynthetic gene cluster expression</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/df9bee84-9201-409a-93da-e5ad7fc98530" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>39. Produksjonsteknikere <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Produksjonsteknikere</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/e6d1707c-8b40-42d4-8355-cd5c75a90271" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>40. Postdoctoral Research Fellow in Algal Microbiome Engineering <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Postdoctoral Research Fellow in Algal Microbiome Engineering</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/50c8bd54-e1c8-4b57-8a82-87fda1bd28c5" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="food" data-date="2026-07-21">
     <h3>41. Vil du lede laboratoriet hos Rørosmeieriet? <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Vil du lede laboratoriet hos Rørosmeieriet?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/0658f823-fddc-43e6-8563-68413cd3434b" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>42. Overingeniør fangstteknologi <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
-    <div class="summary">Overingeniør fangstteknologi</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
-    <a href="https://arbeidsplassen.nav.no/stillinger/stilling/8412bfea-47b0-430c-946d-cd173c2d3411" target="_blank" rel="noopener noreferrer">View Job</a>
-  </div>
-  <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>43. Rådgiver/seniorrådgiver innen smittevernovervåking og helsed <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>42. Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Rådgiver/seniorrådgiver innen smittevernovervåking og helsedata</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/74c78d02-864d-438f-a1cf-14f8d3e9a9e3" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>44. Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Rad <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>43. Overingeniør fangstteknologi <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
+    <div class="summary">Overingeniør fangstteknologi</div>
+    <a href="https://arbeidsplassen.nav.no/stillinger/stilling/8412bfea-47b0-430c-946d-cd173c2d3411" target="_blank" rel="noopener noreferrer">View Job</a>
+  </div>
+  <div class="card" data-cat="research" data-date="2026-07-21">
+    <h3>44. Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produ <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Ingeniører – Kjemisk og radiokjemisk kvalitetskontroll | Radiofarmasøytisk produksjon</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/c2014f0c-a016-4ac9-ab5c-b675ee892a14" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>45. Blir du med på laget som QC Analytiker? <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Blir du med på laget som QC Analytiker?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/8b5f9925-7421-473b-aeb9-bf8549579dd1" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>46. Vil du jobbe med kvalitetskontroll av produkter som brukes v <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>46. Vil du jobbe med kvalitetskontroll av produkter som brukes verden over? <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Vil du jobbe med kvalitetskontroll av produkter som brukes verden over?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/a14692d0-363d-4e89-b534-7daeae30ba12" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>47. Blir du med på laget- QC Analyst - Microbiology? <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Blir du med på laget- QC Analyst - Microbiology?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/e2e9ce32-cd31-4bc8-b3d2-79232af8627c" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>48. Tekniker <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Tekniker</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/2cba9076-7628-46ed-8f03-2783b188add5" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>49. Laboratorieingeniør - vikariat <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Laboratorieingeniør - vikariat</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/fa39eb59-e7c7-4e32-8af0-4c18cd387dbf" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>50. Vil du lede prosjekter som gir kunnskap for et bedre samfunn <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>50. Vil du lede prosjekter som gir kunnskap for et bedre samfunn? <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Vil du lede prosjekter som gir kunnskap for et bedre samfunn?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/19a4c8c4-9867-4ebb-9590-bb3098b668be" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>51. Analytiker <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Analytiker</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/7a4c5464-5502-4ac9-b8fd-28da7055113a" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>52. Overingeniør – pesticidanalyser <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Overingeniør – pesticidanalyser</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/ca73a58b-d175-4c84-9625-976e9212d7e5" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>53. Research Scientist in Analytical Chemistry and Mass Spectrom <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>53. Research Scientist in Analytical Chemistry and Mass Spectrometry <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Research Scientist in Analytical Chemistry and Mass Spectrometry</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/3f7e5311-2f81-46ff-91cb-27d6fe08d4c4" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>54. Vil du være med å fremskape kunnskap om fiskeskadelige alget <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>54. Vil du være med å fremskape kunnskap om fiskeskadelige algetoksiner i norske far <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Vil du være med å fremskape kunnskap om fiskeskadelige algetoksiner i norske farvann?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/31abf579-9f52-4878-9050-54899d10fabd" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>55. Har du interesse og erfaring innen kjemikalieforvaltning og <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>55. Har du interesse og erfaring innen kjemikalieforvaltning og kjemikaliesikkerhet? <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Har du interesse og erfaring innen kjemikalieforvaltning og kjemikaliesikkerhet?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/74c139a0-445e-4b65-be70-8277bbe6f94c" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>56. Seniorforsker innen miljøkjemi og arktisk miljø <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Seniorforsker innen miljøkjemi og arktisk miljø</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/1d80f835-8564-4504-b041-42f5d5d8b71d" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="pharma" data-date="2026-07-21">
-    <h3>57. Er du en erfaren GMP-spesialist med solid kompetanse innen f <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>57. Er du en erfaren GMP-spesialist med solid kompetanse innen farmasøytisk produksj <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Er du en erfaren GMP-spesialist med solid kompetanse innen farmasøytisk produksjon?</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/6eea0b14-eb5c-4a88-9c25-c5aa0445fb72" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
-    <h3>58. Vil du bidra til viktig laboratoriearbeid? Vi søker to avdel <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <h3>58. Vil du bidra til viktig laboratoriearbeid? Vi søker to avdelingsingeniører i 2-å <span class="badge">nav.no</span></h3>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Vil du bidra til viktig laboratoriearbeid? Vi søker to avdelingsingeniører i 2-årige midlertidige ansettelser</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/a294dad8-cf8d-4985-85cd-0639a381c446" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
   <div class="card" data-cat="research" data-date="2026-07-21">
     <h3>59. Prosjektmedarbeider innen torskeoppdrett <span class="badge">nav.no</span></h3>
-    <div class="meta">📍 Source: nav.no &nbsp;|&nbsp; 🗓 Added: 2026-07-21</div>
+    <div class="meta">📍 nav.no &nbsp;|&nbsp; 🗓 2026-07-21</div>
     <div class="summary">Prosjektmedarbeider innen torskeoppdrett</div>
-    <div class="relevant">✅ Matched by automated search — verify relevance</div>
     <a href="https://arbeidsplassen.nav.no/stillinger/stilling/2ac76c48-caf1-4453-89ee-35e5378550e8" target="_blank" rel="noopener noreferrer">View Job</a>
   </div>
 </div>
 <footer style="text-align:center;padding:1.5rem;font-size:0.8rem;color:#888;border-top:1px solid #ddd;margin-top:1rem;">
-  Auto-updated daily from finn.no &amp; arbeidsplassen.nav.no &nbsp;|&nbsp; 2026-07-21
+  Auto-updated daily · finn.no &amp; arbeidsplassen.nav.no · 2026-07-21
 </footer>
 <script>
   let activeCat = 'all', activeDays = null;
@@ -475,25 +415,18 @@
     const now = new Date();
     document.querySelectorAll('.card').forEach(card => {
       const catOk = activeCat === 'all' || card.dataset.cat === activeCat;
-      let dateOk = true;
-      if (activeDays !== null) {
-        const added = new Date(card.dataset.date);
-        dateOk = (now - added) / 86400000 <= activeDays + 1;
-      }
-      card.style.display = (catOk && dateOk) ? 'flex' : 'none';
+      const dateOk = activeDays === null ||
+        (now - new Date(card.dataset.date)) / 86400000 <= activeDays + 1;
+      card.style.display = catOk && dateOk ? 'flex' : 'none';
     });
   }
   function filter(cat, btn) {
     document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeCat = cat; activeDays = null;
-    applyFilters();
+    btn.classList.add('active'); activeCat = cat; activeDays = null; applyFilters();
   }
   function filterDate(days, btn) {
     document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeCat = 'all'; activeDays = days;
-    applyFilters();
+    btn.classList.add('active'); activeCat = 'all'; activeDays = days; applyFilters();
   }
 </script>
 </body>
