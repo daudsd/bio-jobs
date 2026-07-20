@@ -29,10 +29,15 @@ NAV_QUERIES = [
 ]
 
 IRRELEVANT_KEYWORDS = [
-    'phd', 'doktorgrad', 'professor', 'captain', 'skipper', 'renholder',
-    'sjåfør', 'driver', 'butikk', 'retail', 'salg', 'sales', 'marketing',
-    'kommunikasjon', 'økonomi', 'regnskap', 'jus', 'advokat', 'psykolog',
-    'sykepleier', 'lege', 'tannlege', 'barnehage', 'lærer', 'rektor',
+    'phd', 'doktorgrad', 'professor', 'førsteamanuensis', 'universitetslektor',
+    'stipendiat', 'captain', 'skipper', 'renholder', 'sjåfør', 'driver',
+    'butikk', 'retail', 'salg', 'sales', 'marketing', 'kommunikasjon',
+    'økonomi', 'regnskap', 'jus', 'advokat', 'psykolog', 'sykepleier',
+    'lege', 'tannlege', 'barnehage', 'lærer', 'rektor', 'kokk', 'restaurant',
+    'offshore vessel', 'marine superintendent', 'eksplosiv', 'sprengstoff',
+    'administrativ koordinator', 'administrative coordinator',
+    'ukraina', 'batterigjenvinning', 'avløpsrensing', 'biogass',
+    'faghandel', 'xrf', 'geologisk',
 ]
 
 SEEN_FILE = os.path.join(os.path.dirname(__file__), 'seen_jobs.json')
