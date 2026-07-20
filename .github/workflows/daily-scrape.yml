@@ -27,9 +27,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
           git add jobs.html seen_jobs.json
           git diff --staged --quiet || git commit -m "Auto-update jobs $(date +%Y-%m-%d)"
-          git pull --rebase && git push
+          git push
 
   deploy:
     runs-on: ubuntu-latest
