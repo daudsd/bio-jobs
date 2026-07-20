@@ -2,8 +2,8 @@ name: Daily Job Scrape & Deploy
 
 on:
   schedule:
-    - cron: '0 7 * * *'   # every day at 07:00 UTC (09:00 Oslo time)
-  workflow_dispatch:        # allow manual trigger from GitHub UI
+    - cron: '0 7 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,21 +11,19 @@ permissions:
   id-token: write
 
 jobs:
-  scrape-and-deploy:
+  scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Run scraper
         run: python3 scrape.py
 
-      - name: Commit updated files
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -33,21 +31,18 @@ jobs:
           git diff --staged --quiet || git commit -m "Auto-update jobs $(date +%Y-%m-%d)"
           git push
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: github-pages
-
-  build-pages:
+  deploy:
     runs-on: ubuntu-latest
-    needs: scrape-and-deploy
+    needs: scrape
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
 
-      - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
 
