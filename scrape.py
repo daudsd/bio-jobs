@@ -42,6 +42,7 @@ IRRELEVANT_KEYWORDS = [
 
 SEEN_FILE = os.path.join(os.path.dirname(__file__), 'seen_jobs.json')
 HTML_FILE = os.path.join(os.path.dirname(__file__), 'jobs.html')
+TODAY = str(date.today())
 
 # ── Scrapers ──────────────────────────────────────────────────────────────────
 
@@ -111,9 +112,9 @@ def categorize(text):
 
 # ── HTML generation ───────────────────────────────────────────────────────────
 
-CARD_TEMPLATE = '''  <div class="card{cls}" data-cat="{cat}">
+CARD_TEMPLATE = '''  <div class="card{cls}" data-cat="{cat}" data-date="{added}">
     <h3>{num}. {title} <span class="badge">{badge}</span></h3>
-    <div class="meta">📍 {meta}</div>
+    <div class="meta">📍 {meta} &nbsp;|&nbsp; 🗓 Added: {added}</div>
     <div class="summary">{summary}</div>
     <div class="relevant">{relevant}</div>
     <a href="{url}" target="_blank" rel="noopener noreferrer">View Job</a>
@@ -167,6 +168,10 @@ HTML_SHELL = '''<!DOCTYPE html>
   <button onclick="filter('food', this)">Food Industry</button>
   <button onclick="filter('biotech', this)">Biotech</button>
   <button onclick="filter('research', this)">Research</button>
+  <span style="width:1px;background:#ddd;margin:0 4px;"></span>
+  <button onclick="filterDate(0, this)">Today</button>
+  <button onclick="filterDate(7, this)">This Week</button>
+  <button onclick="filterDate(30, this)">This Month</button>
 </div>
 <div class="grid" id="grid">
 {cards}
@@ -175,12 +180,30 @@ HTML_SHELL = '''<!DOCTYPE html>
   Auto-updated daily from finn.no &amp; arbeidsplassen.nav.no &nbsp;|&nbsp; {date}
 </footer>
 <script>
+  let activeCat = 'all', activeDays = null;
+  function applyFilters() {{
+    const now = new Date();
+    document.querySelectorAll('.card').forEach(card => {{
+      const catOk = activeCat === 'all' || card.dataset.cat === activeCat;
+      let dateOk = true;
+      if (activeDays !== null) {{
+        const added = new Date(card.dataset.date);
+        dateOk = (now - added) / 86400000 <= activeDays + 1;
+      }}
+      card.style.display = (catOk && dateOk) ? 'flex' : 'none';
+    }});
+  }}
   function filter(cat, btn) {{
     document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    document.querySelectorAll('.card').forEach(card => {{
-      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'flex' : 'none';
-    }});
+    activeCat = cat; activeDays = null;
+    applyFilters();
+  }}
+  function filterDate(days, btn) {{
+    document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeCat = 'all'; activeDays = days;
+    applyFilters();
   }}
 </script>
 </body>
@@ -195,9 +218,10 @@ def build_card(num, job):
     summary = text[:180].strip()
     relevant = '✅ Matched by automated search — verify relevance'
     cls = ' best' if any(k in text.lower() for k in ['omega-3', 'enzym', 'spray', 'lipid', 'food', 'mat']) else ''
+    added = job.get('added', TODAY)
     return CARD_TEMPLATE.format(
         cls=cls, cat=cat, num=num, title=title, badge=badge,
-        meta=meta, summary=summary, relevant=relevant, url=job['url']
+        meta=meta, summary=summary, relevant=relevant, url=job['url'], added=added
     )
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -205,24 +229,29 @@ def build_card(num, job):
 def load_seen():
     if os.path.exists(SEEN_FILE):
         with open(SEEN_FILE) as f:
-            return set(json.load(f))
-    return set()
+            data = json.load(f)
+            # support both old list format and new dict format
+            if isinstance(data, list):
+                return {k: '2026-07-01' for k in data}
+            return data
+    return {}
 
 def save_seen(seen):
     with open(SEEN_FILE, 'w') as f:
-        json.dump(sorted(seen), f, indent=2)
+        json.dump(seen, f, indent=2)
 
 def main():
-    seen = load_seen()
+    seen = load_seen()  # {id: date_string}
     all_jobs = []
-    new_ids = set()
+    seen_this_run = {}
 
     print(f'Scraping finn.no ({len(FINN_QUERIES)} queries)...')
     for q in FINN_QUERIES:
         jobs = scrape_finn(q)
         for j in jobs:
-            if j['id'] not in seen and j['id'] not in new_ids and is_relevant(j):
-                new_ids.add(j['id'])
+            if j['id'] not in seen_this_run and is_relevant(j):
+                j['added'] = seen.get(j['id'], TODAY)
+                seen_this_run[j['id']] = j['added']
                 all_jobs.append(j)
         print(f'  [{q}] -> {len(jobs)} results')
         time.sleep(0.5)
@@ -231,23 +260,24 @@ def main():
     for q in NAV_QUERIES:
         jobs = scrape_nav(q)
         for j in jobs:
-            if j['id'] not in seen and j['id'] not in new_ids and is_relevant(j):
-                new_ids.add(j['id'])
+            if j['id'] not in seen_this_run and is_relevant(j):
+                j['added'] = seen.get(j['id'], TODAY)
+                seen_this_run[j['id']] = j['added']
                 all_jobs.append(j)
         print(f'  [{q}] -> {len(jobs)} results')
         time.sleep(0.5)
 
-    print(f'\nNew jobs found: {len(all_jobs)}')
+    new_count = sum(1 for jid in seen_this_run if jid not in seen)
+    print(f'\nTotal jobs found: {len(all_jobs)} ({new_count} new)')
 
-    if not all_jobs and os.path.exists(HTML_FILE):
-        print('No new jobs — HTML unchanged.')
-        return
-
-    seen.update(new_ids)
+    seen.update(seen_this_run)
     save_seen(seen)
 
+    # sort: newest first
+    all_jobs.sort(key=lambda j: j['added'], reverse=True)
+
     cards = '\n'.join(build_card(i + 1, j) for i, j in enumerate(all_jobs))
-    html = HTML_SHELL.format(date=str(date.today()), total=len(all_jobs), cards=cards)
+    html = HTML_SHELL.format(date=TODAY, total=len(all_jobs), cards=cards)
 
     with open(HTML_FILE, 'w', encoding='utf-8') as f:
         f.write(html)
